@@ -310,6 +310,14 @@ shiny bits @ release time:
 * Ruby
 	* no 1.8.5 support (provisions runs 1.8.5, salves run newer)
 	* upgrade path: puppetlabs provides 1.8.7 EL6 backports! yay!
+	
+* dynamic scoping gone (this will need some re-writes!)
+
+* Future:
+	* better quality
+	* slimmer, split out some core types like nagios providers into modules
+	* Themed releases in 3.X, cycles.
+	* Driven by User Testing.
 
 
 
