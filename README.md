@@ -319,6 +319,36 @@ shiny bits @ release time:
 	* Themed releases in 3.X, cycles.
 	* Driven by User Testing.
 
+Reading from the Puppet Data Library
+------------------------------------
+Nick Lewis, Puppet Labs - Core Developer
+
+Puppet knows your infra.
+And it thinks. 
+
+more what less how. 
+
+speaks data
+
+Puppet Data Library: more of a principle, automatically collected, accessible by YOU, everything puppet knows.
+PuppetDB = the bookshelves
+
+* Today:
+	* Facts 
+	* Catalogs
+* Soon: 
+	* Events
+	* Historical data
+
+**Big Data**
+its not the size of the data you have, its what you do with it
+
+This is **not big data**! 
+
+See your data, form an emotional and intellectual connection with it. 
+
+Make things from your data, audit relationships.
+
 
 
 Day 2, friday Sept 28th
