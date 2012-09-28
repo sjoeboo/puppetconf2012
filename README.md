@@ -513,9 +513,27 @@ doesn't process by lines, so multi line events can be filtered as events, not ju
 
 can output to ganglia, etc
 
+Foreman and Friends
+-------------------
+Ohad Levy
+redhat - Principal Software Engineer
 
+Realm: Provision everything, config mgmt (puppet), inventory, active reporting, one simple ui.
+can do bare metal provisioning, as well as RHEV-M/ec2,openstack (kvm?)
+smart proxies: use existing infrastructure (dns,dhcp,etc), allow foreman to use them over its apis.
  
- 
+provisioning demo, creating a new host
+1.1 coming soon (need to upgrade to 1.0!)
+support for parameterized classes
+
+smart proxies look cool, we could use more of these features
+
+all templates for provisioning are erb based. (like THIS better than cobbler), full audit log
+whoa, in browser vnc for console to your systems!
+organization and location support coming! 
+
+
+
 
 
 
