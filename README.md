@@ -470,6 +470,51 @@ coming soon: new api + cli updates, vmware integration, windows provisioning (no
 
 https://github.com/puppetlabs/Razor
 
+Getting Started with Contributing to Puppet and Facter
+------------------------------------------------------
+ Ruth Linehan, Tesca Fitzgerald, Hailee Kenney
+
+ Not scary! 
+ 
+ Why do it? Its nice to do! Help add your own features, etc. IRC Karma! 
+ 
+ Open a redmine account, links.puppetlabs.com/patches_welcome 
+ 
+ always fork, clone, edit! 
+ 
+ write spec tests! 
+ 
+Logging: logstash and other things
+-----------------------------------
+Jordan Sissel
+DreamHost - czar of logging
+
+Runs masterless puppet! Also runs nodeless! 
+
+makes fpm! 
+
+disk full ? rm -rf ALL LOGS, we don't need that shit! 
+
+what else sucks? Shitty error messages
+logs: no std format, generally we have some every + tiemstamp though
+normal way: send to syslog, rotate, throw away later.
+
+logstash! 
+
+configs look like puppet. like, really like puppet. 
+
+write patterns for logs of various logs, simple, suddenly you have context around logs
+
+regex? Grok! 100 patterns+ can be extended. no need to write yuor own regex's for each thing, just use the "ip" grok `%{SYNTAX:name:type}`
+
+too many time formats. logstash has a date filter to fix. 
+
+doesn't process by lines, so multi line events can be filtered as events, not just lines!
+
+can output to ganglia, etc
+
+
+ 
  
 
 
