@@ -424,4 +424,55 @@ foreman used.
 
 awesome vids of falcon 1, 9, and simulation of falcon heavy. 
 
+Package management and Puppet
+-----------------------------
+Sam Kottler
+Red Hat - Software Engineer
+
+homebrew package provider, also macports + fink for osx
+
+module_name/plugins/puppet/provider/package/provider.rb for custom bits
+
+arrays and methods really. 
+
+fpm -s gem -t rpm rails (builds rpm for rails from gem!)
+
+Razor : DevOps + Bare-metal Provisioning 
+----------------------------------------
+Nicholas Weaver
+VMware - Automation Architect
+
+provisioning sucks
+lots of tools, all kinda work, each its own way, some os's but not others..meh, not devops
+scale
+
+cloud/virt can go forever, physical is finite
+
+in a dream world:
+treat things like they ARE virtual
+declare what it should be. 
+slice dice as needed
+link into the real configuration
+
+puppet is really good at config...occams razor
+
+razor suppers: sles, opensuse, RHEL, centos Esxi, debian, ubuntu, more (windows soon)
+
+5 major things to setup and deploy w/ razor:
+
+discovery: razor does not do dhcp, you pxe systems into a razor microkernel. this contains facter! then it sits in ipxe basically. razor then says hello and registers it w/ facts etc. 
+tagging: tags facts basically, so you can look at discovered systems in groups like "virtual", "C6100s" etc. User defined too. match tags too. 
+modeling: model templates = supported os's, base definition. + metadate = model. has enough to get system up then let puppet take over. assign hostname prefix and domainname
+brokers: broker = puppetmaster
+policies: tags + model +broker(optional), work like firewall rules tables, top down eval, exists on a rule 
+
+coming soon: new api + cli updates, vmware integration, windows provisioning (no wds, opensource,just like *nix deployments)
+
+https://github.com/puppetlabs/Razor
+
+ 
+
+
+
+
 
