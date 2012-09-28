@@ -353,3 +353,75 @@ Make things from your data, audit relationships.
 
 Day 2, friday Sept 28th
 =======================
+Key Note #1:
+------------
+Dan Hushon, EMC Corporation - Distinguished Engineer
+
+Confounding Complexity
+
+k2:
+1000 node, 24,000 core clustsr, 24PB, hadoop cluster for testing
+
+how to manage very large, very complex systems
+independence, link independent systems in to hierarchies, partition
+
+Razor provisioning Windows demo! 
+
+Key Note #2
+-----------
+Tim Bell, CERN - Operating System and Infrastructure Manager
+
+Accelerating Science with Puppet
+
+Answering fundamental questions: mass, what is 96% of the universe, why not anti-mater, etc etc
+
+Lots of cool technical descriptions of the ring etc.
+
+1PB/sec generated
+
+Computing:
+couple 100+ node farms to just do initial filtering of raw raw data. 
+tier 0, tier 1, tier 2
+25PB /yea to record, 20 year retention. 
+6GB/sec normal, 25GB/sec peak.
+45,000 tapes, holding 73PB of data. 
+
+20% writes, 80% read
+
+New data center need for energy, additional 2.7MW (currently @ 3.5MW)
+hands off site, managed remote 
+
+New strategy: not special anymore, look to others for ideas. 
+
+pets + cattle:
+
+pets are given uniqe names, you care about them, you fix them when sick
+cattle are given numbers, when sick you shoot them
+
+lots of forge modules, use foreman for proivisioning + openstack
+
+LHC@home boinc project, puppet module available. 
+
+next steps: puppetdb, mcollective
+15K hypervisors, 100,000-300,0000 virtual machines
+github cernops
+
+
+Key Note #3
+-----------
+Joachim Thuau, SpaceX - System Engineer - Linux
+
+how to stay sane while sending rockets into space
+
+only recent puppet adoption
+
+ubuntu/debian based evn
+AD/Ldap
+local apt mirror + custom repos
+lots of scripts...
+pxe boot to build, puppet is installed, does the rest of the config. 
+foreman used. 
+
+awesome vids of falcon 1, 9, and simulation of falcon heavy. 
+
+
