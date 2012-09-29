@@ -532,8 +532,32 @@ all templates for provisioning are erb based. (like THIS better than cobbler), f
 whoa, in browser vnc for console to your systems!
 organization and location support coming! 
 
+Config managment @ CERN
+-------------
+Ben Jones,CERN - Devops
 
+12K nodes
 
+wrote own cfg mgmt, Quattor.
+
+foreman used for provisioning, looking at razor. love the foreman api. 
+pre-existing infra = hyperV, new stuff all openstack puppeted
+
+load balanced puppet, multiple foreman servers w/ memcached, separate ca server(bugs)
+
+all git, branches = environments like us, prod dev test branches, topic branches for major changes
+
+share modules on github, cernops
+
+cernit not only puppet deployment on site, atlas does their own. 
+
+use hirea, and gpg for secrets. db backend for integration with other systems (monitoring, metrics etc)
+
+lots of modules form the forge etc used. 
+
+some open issues, solves diversity, but multiple admins? rolling updates
+
+The END! 
 
 
 
